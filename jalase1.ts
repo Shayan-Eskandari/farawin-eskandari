@@ -8,8 +8,6 @@ private stopTime:number  =0;
         if(this.swStart!=0){console.log("its alredy start")}
         else{ this.swStart=1;this.startTime=Date.now();}
    }
-       
-   
    public  stop(){
    if(this.swStart==0){console.log("its didnt start")} 
    else {this.total=Date.now() -this.startTime;console.log(this.total)}
