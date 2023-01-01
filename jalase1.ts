@@ -12,7 +12,7 @@ private stopTime:number  =0;
    
    public  stop(){
    if(this.swStart==0){console.log("its didnt start")} 
-   else {this.total=this.startTime-this.stopTime;console.log(this.total)}
+   else {this.total=Date.now() -this.startTime;console.log(this.total)}
    }
    reset(){
     this.total=0;
